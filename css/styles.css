@@ -1,0 +1,49 @@
+:root
+.page {
+    background-color: #F5F5F5;
+    color: #757575;
+}
+
+ /* logo */
+.logo {
+    color: #000000;
+}
+
+.web-logo {
+    color: #2196F3
+}
+
+ul {
+list-style: none;
+}
+
+/* site-nav */
+.nav-current {
+    color: #2196F3
+}
+
+.nav-item {
+    color: #000000
+}
+/* site-info */
+.mail {
+    color: #2196F3
+}
+
+.tel {
+    color: #757575
+}
+
+/* hero */
+.hero {
+    background-color: #2F303A;
+    
+}
+
+.hero-title {
+    color:#FFFFFF
+}
+
+.section-title {
+    color: #000000
+}
