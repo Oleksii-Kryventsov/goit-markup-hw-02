@@ -1,38 +1,82 @@
-:root
-.page {
+:root{
+    --main-color: #757575;
+    --secondary-color: #212121;
+    --tertiary-color: #2196F3;
+    
+}
+
+body {
     background-color: #F5F5F5;
     color: #757575;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-header {
+    background-color: #FFFFFF ;
 }
 
  /* logo */
 .logo {
-    color: #000000;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1923;
+  text-decoration: none;
 }
 
 .web-logo {
-    color: #2196F3
+    color: var(--tertiary-color);
 }
 
 ul {
-list-style: none;
+  list-style: none;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
 }
 
 /* site-nav */
 .nav-current {
-    color: #2196F3
+    color: var(--tertiary-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.02em;
+    font-style: normal;
 }
 
 .nav-item {
-    color: #000000
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.02em;
+    font-style: normal;
 }
-/* site-info */
-.mail {
-    color: #2196F3
+/* contacts */
+.header-contact {
+    color: var(--main-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.02em;
 }
 
-.tel {
-    color: #757575
+.mail:hover,
+.mail:focus{
+    color:var(--tertiary-color);
+} 
+
+.tel:hover,
+.tel:focus{
+    color:var(--tertiary-color)
 }
+
 
 /* hero */
 .hero {
@@ -41,9 +85,27 @@ list-style: none;
 }
 
 .hero-title {
-    color:#FFFFFF
+    color:#FFFFFF;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
-.section-title {
-    color: #000000
+.hero-button {
+    color:#FFFFFF;
+    background-color: var(--tertiary-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    text-align: center;
+    border:none
 }
+
