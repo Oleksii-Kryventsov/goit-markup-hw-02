@@ -159,11 +159,12 @@ a {
 
 .team-title {
     color:var(--secondary-color);
+    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1666;
     letter-spacing: 0.03em;
-    font-style: normal;
+    
 }
 
 .team-item {
@@ -188,4 +189,50 @@ a {
     line-height: 1.1875;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+/* footer */
+.footer {
+    background-color: #2F303A;
+}
+
+.footer-logo {
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+    
+    letter-spacing: 0.03em;
+}
+
+.actual-address {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142;    
+    letter-spacing: 0.03em;
+
+}
+
+.footer-mail {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142;
+    letter-spacing: 0.03em;
+    
+}
+
+.footer-tel {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142;
+    letter-spacing: 0.03em;
+
 }
