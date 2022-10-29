@@ -3,13 +3,19 @@
     --secondary-color: #212121;
     --tertiary-color: #2196F3;
     --fourth-color: #FFFFFF;
+    --fifth-color:  #000000;
+    --sixth-color: #2F303A;
+    --seventh-color: #F5F4FA;
     
 }
 
 body {
-    background-color: #F5F5F5;
-    color: #757575;
+    background-color:var(--fourth-color);
+    color:var(--main-color);
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 .list {
@@ -30,7 +36,7 @@ body {
  /* logo */
 
 .logo {
-  color: #000000;
+  color:var(--fifth-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -52,8 +58,9 @@ body {
     letter-spacing: 0.02em;
 }
 
-.nav-current:active{
-    color:var(--tertiary-color)
+.nav-current:hover,
+.nav-current:focus{
+    color: var(--tertiary-color);
 }
 
 .nav-portfolio {
@@ -64,12 +71,9 @@ body {
     letter-spacing: 0.02em;
 }
 
-.nav-portfolio-current {
-    color: var(--tertiary-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+.nav-portfolio:hover,
+.nav-portfolio:focus{
+    color:var(--tertiary-color)
 }
 
 .nav-contacts {
@@ -78,6 +82,11 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.nav-contacts:hover,
+.nav-contacts:focus{
+    color:var(--tertiary-color)
 }
 
 /* contacts */
@@ -102,7 +111,7 @@ body {
 
 /* hero */
 .hero {
-    background-color: #2F303A; 
+    background-color:var(--sixth-color); 
 }
 
 .hero-title {
@@ -147,15 +156,12 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .quality-text {
     color:var(--main-color);
     font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 /* activity-section */
@@ -164,13 +170,12 @@ body {
     color:var(--secondary-color);
     font-size: 36px;
     line-height: 1.16;
-    letter-spacing: 0.03em;
     font-weight: 700;
 }
 
 /* team-section */
 .team-section {
-    background-color: #F5F4FA;
+    background-color: var(--seventh-color);
 }
 
 .team-title {
@@ -178,7 +183,6 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    letter-spacing: 0.03em;
 }
 
 .team-item {
@@ -191,7 +195,6 @@ body {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .team-text {
@@ -199,12 +202,11 @@ body {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 /* footer */
 .footer {
-    background-color: #2F303A;
+    background-color: var(--sixth-color);
 }
 
 .footer-logo {
@@ -213,14 +215,12 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 
 .address {
     color: var(--fourth-color);
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
     font-style: normal;
 }
 
@@ -229,7 +229,6 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
 }
 
 .footer-mail:hover,
@@ -241,7 +240,6 @@ body {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
     font-style: normal;
 }
 
@@ -263,31 +261,23 @@ body {
     clip: rect(0 0 0 0);
 }
 
-.main-portfolio-btn {
-    color:var(--fourth-color);
-    background-color: var(--tertiary-color);
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    border: none;
-    cursor: pointer;
-}
-
 .portfolio-btn {
     color:var(--secondary-color);
-    background-color: #F5F4FA;
+    background-color: var(--seventh-color);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
     border:none;
     cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus{
+    background-color:var(--tertiary-color);
+    color:var(--fourth-color);
 }
 
 /* Examples */
@@ -303,6 +293,5 @@ body {
 .example-text {
     color: var(--main-color);
     line-height: 1.88;
-    letter-spacing: 0.03em;
     font-size: 16px;
 }
